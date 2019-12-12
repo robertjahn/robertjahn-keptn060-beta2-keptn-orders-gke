@@ -1,2 +1,2 @@
-image: robjahn/keptn-orders-catalog-end:1
+image: robjahn/keptn-orders-catalog-service:1
 replicaCount: 1
