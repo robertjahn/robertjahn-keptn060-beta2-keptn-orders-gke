@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2019-12-12T12:55:22Z"
+  name: catalog-primary
+  resourceVersion: "653857"
+  selfLink: /api/v1/namespaces/keptnorders-production/services/catalog
+  uid: a8a16f9f-1cde-11ea-9ceb-42010a8e023f
+spec:
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: catalog-primary
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
